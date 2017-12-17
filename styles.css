@@ -13,48 +13,56 @@ main {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-template-rows: 33.3% 33.3% 33.3%;
+  border: 1px solid black;
 }
 
 aside {
   width: 40%;
   height: 100vh;
+  margin-left: -2px
 }
 
+img {
+  height: 10rem;
+  width: 10rem;
+}
 article {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .name-resume {
-  background-color: blue;
+  background-color: #762EAC;
   grid-column-start: 1;
   grid-column-end: span 2;
 }
 
 .profile {
-  background-color: coral;
+  background-color: #1A4424;
 }
 
 .experience {
-  background-color: chartreuse;
+  background-color: #D1CB6B;
 }
 
 .education {
-  background-color: purple;
+  background-color: #010000;
 }
 
 .blog {
-  background-color: pink;
+  background-color: #F20000;
 }
 
 .social-menu {
-  background-color: maroon;
+  background-color: #E45328;
 }
 
 .contact {
-  background-color: green;
+  background-color: #01662E;
 }
 
 .portfolio {
-  background-color: yellow;
+  background-color: #E45733;
 }
 
 aside {
