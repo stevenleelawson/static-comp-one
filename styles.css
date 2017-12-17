@@ -4,6 +4,13 @@ html {
 
 body {
   box-sizing: border-box;
+  font-family: 'Amatic SC', cursive;
+}
+
+p {
+  color: #fff;
+  font-size: 2.5rem;
+  margin: 1rem;
 }
 
 main {
@@ -28,6 +35,7 @@ img {
 }
 article {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -42,7 +50,7 @@ article {
 }
 
 .experience {
-  background-color: #D1CB6B;
+  background-color: #9E3C43;
 }
 
 .education {
@@ -50,19 +58,19 @@ article {
 }
 
 .blog {
-  background-color: #F20000;
+  background-color: #EE0000;
 }
 
 .social-menu {
-  background-color: #E45328;
-}
-
-.contact {
   background-color: #01662E;
 }
 
+.contact {
+  background-color: #66010A;
+}
+
 .portfolio {
-  background-color: #E45733;
+  background-color: #231831;
 }
 
 aside {
