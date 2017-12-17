@@ -1,3 +1,57 @@
+html {
+  font-size: 10px;
+}
+
 body {
-  background: chartreuse;
+  box-sizing: border-box;
+}
+
+main {
+  width: 60%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+aside {
+  width: 40%;
+  height: 100vh;
+}
+
+article {
+
+}
+.name-resume {
+  background-color: blue;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+
+.profile {
+  background-color: coral;
+}
+
+.experience {
+  background-color: chartreuse;
+}
+
+.education {
+  background-color: purple;
+}
+
+.blog {
+  background-color: pink;
+}
+
+.social-menu {
+  background-color: maroon;
+}
+
+.contact {
+  background-color: green;
+}
+
+.portfolio {
+  background-color: yellow;
 }
