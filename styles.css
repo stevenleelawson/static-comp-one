@@ -80,7 +80,7 @@ aside {
   background-size: cover;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 770px) {
   main {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -97,12 +97,21 @@ aside {
     background: url('joker3.jpg') no-repeat;
     background-size: cover;
   }
+
+  .portfolio {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+  }
 }
 
 @media screen and (max-width: 360px) {
+  body {
+    background-color: black;
+  }
   main {
     display: block;
     width: 100%;
+    height: 100%;
     border: 2px solid black;
   }
   article {
@@ -112,7 +121,7 @@ aside {
     display: block;
     float: none;
     width: 100%;
-    margin-top: 78rem;
+    margin-top: 0;
     background: url('joker2.jpg') no-repeat;
     background-size: cover;
     border: 2px solid black;
