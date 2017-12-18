@@ -79,3 +79,45 @@ aside {
   background: url('jokerXmas.jpg') no-repeat;
   background-size: cover;
 }
+
+@media screen and (max-width: 900px) {
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    border: 1px solid black;
+    float: none;
+    width: 100%;
+  }
+  aside {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-top: 43.5rem;
+    background: url('joker3.jpg') no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main {
+    display: block;
+    width: 100%;
+    border: 2px solid black;
+  }
+  article {
+    width: 100%;
+  }
+  aside {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-top: 78rem;
+    background: url('joker2.jpg') no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+  }
+  img {
+    padding: 2rem;
+  }
+}
