@@ -33,6 +33,13 @@ img {
   height: 10rem;
   width: 10rem;
 }
+
+.logo {
+  height: 2rem;
+  width: 2rem;
+  padding-right: 1rem;
+}
+
 article {
   display: flex;
   flex-direction: column;
@@ -43,6 +50,7 @@ article {
   background-color: #762EAC;
   grid-column-start: 1;
   grid-column-end: span 2;
+  display: inline-block;
 }
 
 .profile {
@@ -78,9 +86,57 @@ aside {
   float: right;
   background: url('jokerXmas.jpg') no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-position: center;
 }
 
-@media screen and (max-width: 770px) {
+.resume-button,
+.contact-button {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 1rem;
+  width: 25%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+
+.description {
+  font-family: 'Alegreya', serif;
+  font-size: 1.5rem;
+  width: 85%;
+  margin: 3rem 0 0 2rem;
+}
+
+.ellipsis {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 4rem;
+  margin: 2rem 1rem 0 0;
+}
+
+.left-arrow,
+.right-arrow {
+  height: 6rem;
+}
+.arrows {
+  /*display: flex;
+  justify-content: space-between;
+  margin-top: 50%;*/
+}
+
+@media screen and (max-width: 900px) {
   main {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -94,7 +150,6 @@ aside {
     float: none;
     width: 100%;
     margin-top: 43.5rem;
-    background: url('joker3.jpg') no-repeat;
     background-size: cover;
   }
 
@@ -102,9 +157,23 @@ aside {
     grid-column-start: 1;
     grid-column-end: span 2;
   }
+
+  .ellipsis {
+    position: absolute;
+    top: 155%;
+  }
+  .left-arrow,
+  .right-arrow {
+    position: relative;
+    top: 48%;
+  }
+
+  .right-arrow {
+    margin-left: 5rem;
+  }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 450px) {
   body {
     background-color: black;
   }
@@ -114,19 +183,37 @@ aside {
     height: 100%;
     border: 2px solid black;
   }
+
   article {
     width: 100%;
   }
+
   aside {
     display: block;
     float: none;
     width: 100%;
     margin-top: 0;
-    background: url('joker2.jpg') no-repeat;
     background-size: cover;
     border: 2px solid black;
   }
+
   img {
+    padding: 2rem;
+  }
+
+  .ellipsis {
+    display: absolute;
+    top: 200%;
+  }
+
+  .resume-button,
+  .contact-button{
+    height: 2rem;
+    width: 10rem;
+  }
+
+  .button-container{
+    margin: 2rem 0 0 0;
     padding: 2rem;
   }
 }
