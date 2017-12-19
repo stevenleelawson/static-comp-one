@@ -168,9 +168,10 @@ aside {
     top: 48%;
   }
 
-  .right-arrow {
-    margin-left: 5rem;
+  .left-arrow {
+    margin-left: 20rem;
   }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -215,5 +216,9 @@ aside {
   .button-container{
     margin: 2rem 0 0 0;
     padding: 2rem;
+  }
+
+  .left-arrow {
+    margin-left: 26rem;
   }
 }
